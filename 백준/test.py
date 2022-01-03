@@ -1,23 +1,38 @@
-# 15651번 
-n,m = list(map(int,input().split()))
+# 10828
+import sys
+input=sys.stdin.readline
 
-# 백트래킹을 위해 사용되는 리스트 s 
+stack1 = []
 
-s = []
- 
-def dfs():
-    # 재귀함수의 조건 특정 입력에 대해서는 자기자신을 
-    # 호출하지않고 종료되어야함 (Base condition)
-    # 또한 모든 입력은 base condition 으로 수렴해야함
-    if len(s)==m:
-        # " "을 띄우고 s 를 출력하는방법
-        print(' '.join(map(str,s)))
+def stack_util(commend):
+    if commend[0] == "push":
+        stack1.append(int(commend[1]))
         return
-    
-    for i in range(1,n+1):
-        if i not in s:
-            s.append(i)
-            dfs()
-            s.pop()
- 
-dfs()
+    elif commend[0] == "pop":
+        if len(stack1)==0:
+            print(-1)
+        else:
+            print(stack1[-1])
+            stack1.pop()
+        return
+    elif commend[0] == "size":
+        print(len(stack1))
+        return
+    elif commend[0] == "empty":
+        if len(stack1) == 0:
+            print(1)
+        else:
+            print(0)
+        return
+    elif commend[0] == "top":
+        if len(stack1)==0:
+            print(-1)
+        else:
+            print(stack1[-1])
+        return
+
+a = int(input())
+
+for i in range(a):
+    b = list(map(str,input().split()))
+    stack_util(b)
