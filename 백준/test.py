@@ -1,38 +1,24 @@
-# 10828
+#1406 
 import sys
-input=sys.stdin.readline
+stack_L =  list(sys.stdin.readline().strip())
+stack_R = []
+n = int(input())
 
-stack1 = []
+for i in range(n):
+    temp =  sys.stdin.readline()
+    if  temp[0] == "L":
+        if len(stack_L) != 0 :
+            stack_R.append(stack_L.pop())
+    elif temp[0] == "D":
+        if len(stack_R) != 0 :
+            stack_L.append(stack_R.pop())
+    elif temp[0] == "B":
+        if len(stack_L) != 0 :
+            stack_L.pop()
+    elif temp[0] == "P":
+            stack_L.append((temp[2]))   
+            
+stack_R.reverse()
+stack_L.extend(stack_R) 
 
-def stack_util(commend):
-    if commend[0] == "push":
-        stack1.append(int(commend[1]))
-        return
-    elif commend[0] == "pop":
-        if len(stack1)==0:
-            print(-1)
-        else:
-            print(stack1[-1])
-            stack1.pop()
-        return
-    elif commend[0] == "size":
-        print(len(stack1))
-        return
-    elif commend[0] == "empty":
-        if len(stack1) == 0:
-            print(1)
-        else:
-            print(0)
-        return
-    elif commend[0] == "top":
-        if len(stack1)==0:
-            print(-1)
-        else:
-            print(stack1[-1])
-        return
-
-a = int(input())
-
-for i in range(a):
-    b = list(map(str,input().split()))
-    stack_util(b)
+print("".join(stack_L))
