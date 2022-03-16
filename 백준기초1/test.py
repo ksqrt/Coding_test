@@ -1,22 +1,31 @@
-#17298 오큰수
+# 6588 골드바흐의 추축
+
 import sys
+input = sys.stdin.readline
 
-n = int(sys.stdin.readline())
-arr1 = [list(map(int,sys.stdin.readline().split())) for _ in range(n)]
 
-nge = []
-temp = []
-for i in range(n-1):
-    k = arr1[i]
-    for j in range(i+1,n):
-        if arr1[j] > k :
-            temp.append(arr1[j])
-            
-    if len(temp)==0:
-        nge.append(-1)
-    else :
-        nge.append(temp[0])
-        temp.clear()
-         
-nge.append(-1)
-print(nge)
+n = 1000000
+primes = []
+arr = [False,False]+[True]*(n+1)
+for i in range(2,n+1):
+    if arr[i] == True:
+        primes.append(i)
+        for j in range(2*i,n+1,i):
+            arr[j] = False
+
+li = []
+
+while True:
+    breaker =  True
+    a = int(input())
+    if a == 0 :
+        break
+    for i in range(len(primes)):
+        for j in range(i,len(primes)):
+            if primes[i] + primes[j] == a :
+                print(a,"=",primes[i],"+",primes[j])
+                # 이중for 문의 break 기술 
+                breaker = False
+                break
+        if(breaker == False):
+            break
