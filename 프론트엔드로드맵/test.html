@@ -1,3 +1,4 @@
+<!-- ! + tab 을 누르면 html 기본양식이 자동완성 됩니다 -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,28 +6,95 @@
     <title>Hello World!</title>
   </head>
 
-  <body>
+  <body style="background-color: black; color: white">
+    <style>
+      /*id 선택자 우선순위가 가장 높습니다 그러나 범위작음*/
+      #first {
+        color: green;
+        background-color: blue;
+      }
+
+      /*클래스 선택자 우선순위 2번쨰고 범위가 큼*/
+      .js {
+        font-weight: bold;
+        color: red;
+      }
+      /* span 태그를 지정해서 이 태그전부에 스타일을 적용합니다 우선순위 가장 낮음*/
+      span {
+        color: blue;
+      }
+    </style>
+
+    <h2 style="color: powderblue; background-color: brown">Java Script</h2>
     <!-- on ~속성 다음에는 무적권 자바스크립트가 와야합니다 이는 html과 js 의만남 !!
     이벤트다~ 애요 -->
 
+    
     <!-- 클릭 이벤트 -->
-    <input type="button" value="hi" onclick="alert('hi')" />
+    <input
+      id="first"
+      class="js"
+      type="button"
+      value="hi"
+      onclick="alert('hi')"
+    />
     <!-- 텍스트 바뀜 이벤트 -->
     <input type="text" value="ABC" onchange="alert('changed!!!')" />
     <!-- 키다운(키입력) 이벤트 -->
     <input type="button" value="ABC" onkeydown="alert('keydown!!!')" />
 
+    <input
+      type="button"
+      value="다크모드 OFF"
+
+      // 클릭이벤트에 제어할 태그 선택 이후 스타일 변경 //
+      
+      onclick="
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+    "
+    />
+    <input
+      type="button"
+      value="다크모드 ON"
+
+      // 클릭이벤트에 제어할 태그 선택 이후 스타일 변경 //
+
+      onclick="
+      document.querySelector('body').style.backgroundColor = 'Black';
+      document.querySelector('body').style.color = 'white';
+  "
+    />
+
+    <!-- 모드 토글 -->
+    <!-- ctrl +  -->
+
+    <input
+      type="button"
+      value="night"
+      onclick="
+      if(this.vaule === 'night'){
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        this.vaule = 'day';
+      }
+      else{
+        document.querySelector('body').style.backgroundColor = 'Black';
+        document.querySelector('body').style.color = 'white';
+        this.vaule ='night'; 
+      }
+  "
+    />
 
 
 
 
 
 
+    <span class="js"> 스팬1 </span>
+    <span> 스팬2 </span>
+    <!-- 다크모드만들기 -->
 
-
-
-
-    
     <script>
       document.write(1 + 1);
     </script>
