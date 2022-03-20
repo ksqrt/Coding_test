@@ -10,10 +10,11 @@
     <h1>Array</h1>
     <h2>Syntax</h2>
     <script>
-      var coworkers = ["ego", "ing", "leezche"];
+      var coworkers = ["ego", "ing", "leezche", "성욱", "이름1", "싸발럼","태호"];
     </script>
     <h2>get</h2>
     <script>
+      var alist = document.querySelectorAll("a");
       document.write(coworkers[0]);
       document.write(coworkers[2]);
     </script>
@@ -22,6 +23,45 @@
       document.push("duru");
       document.push("taeho");
       document.writer(coworkers);
+    </script>
+
+    <ul>
+      <script>
+        var step;
+        for (step = 1; step < 5; step++) {
+          // Runs 5 times, with values of step 0 through 4.
+          document.write("<li>" + step + "</li>");
+          console.log("Walking east one step");
+        }
+      </script>
+    </ul>
+    <hr />
+    <ul>
+      <script>
+        var step = 1;
+        while (true) {
+          document.write("<li>" + step + "</li>");
+          step++;
+          if (step == 5) {
+            break;
+          }
+        }
+      </script>
+    </ul>
+    <script>
+      var i;
+      for (i = 0; i < coworkers.length; i++) {
+        document.write("<li><a href = 'https://www.naver.com/'>" + coworkers[i]  + "</a></li>");
+      }
+    </script>
+
+    <script>
+        var alist = document.querySelectorAll('a');
+        var i =-0
+        for (i = 0; i < alist.length; i++) {
+           console.log(alist[i]);
+           alist[i].style = "powderblue";
+          }
     </script>
   </body>
 </html>

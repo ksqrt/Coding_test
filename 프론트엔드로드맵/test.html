@@ -6,7 +6,7 @@
     <title>Hello World!</title>
   </head>
 
-  <body style="background-color: black; color: white">
+  <body>
     <style>
       /*id 선택자 우선순위가 가장 높습니다 그러나 범위작음*/
       #first {
@@ -24,80 +24,47 @@
         color: blue;
       }
     </style>
-
+    
+    <script src="colors.js"></script>
     <h2 style="color: powderblue; background-color: brown">Java Script</h2>
     <!-- on ~속성 다음에는 무적권 자바스크립트가 와야합니다 이는 html과 js 의만남 !!
     이벤트다~ 애요 -->
 
-    
-    <!-- 클릭 이벤트 -->
-    <input
-      id="first"
-      class="js"
-      type="button"
-      value="hi"
-      onclick="alert('hi')"
-    />
-    <!-- 텍스트 바뀜 이벤트 -->
-    <input type="text" value="ABC" onchange="alert('changed!!!')" />
-    <!-- 키다운(키입력) 이벤트 -->
-    <input type="button" value="ABC" onkeydown="alert('keydown!!!')" />
-
     <input
       type="button"
-      value="다크모드 OFF"
-
-      // 클릭이벤트에 제어할 태그 선택 이후 스타일 변경 //
-      
+      value="Night"
       onclick="
-      document.querySelector('body').style.backgroundColor = 'white';
-      document.querySelector('body').style.color = 'black';
-    "
+      night_handler(this);
+      "
     />
-    <input
-      type="button"
-      value="다크모드 ON"
+    <script>
+      var coworkers = [
+        "ego",
+        "ing",
+        "leezche",
+        "성욱",
+        "이름1",
+        "싸발럼",
+        "태호",
+      ];
+    </script>
 
-      // 클릭이벤트에 제어할 태그 선택 이후 스타일 변경 //
-
-      onclick="
-      document.querySelector('body').style.backgroundColor = 'Black';
-      document.querySelector('body').style.color = 'white';
-  "
-    />
-
-    <!-- 모드 토글 -->
-    <!-- ctrl +  -->
-
-    <input
-      type="button"
-      value="night"
-      onclick="
-      if(this.vaule === 'night'){
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-        this.vaule = 'day';
+    <script>
+      var i;
+      for (i = 0; i < coworkers.length; i++) {
+        document.write(
+          "<li><a href = 'https://www.naver.com/'" +
+            coworkers[i] +
+            ">" +
+            coworkers[i] +
+            "</a></li>"
+        );
       }
-      else{
-        document.querySelector('body').style.backgroundColor = 'Black';
-        document.querySelector('body').style.color = 'white';
-        this.vaule ='night'; 
-      }
-  "
-    />
-
-
-
-
-
+    </script>
 
     <span class="js"> 스팬1 </span>
     <span> 스팬2 </span>
     <!-- 다크모드만들기 -->
 
-    <script>
-      document.write(1 + 1);
-    </script>
-    1+1
   </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <!-- 객체만들기 객체에 속한변수는 프로퍼티라고 정의합니다-->
+    <script>
+      var coworkers = { "programer1" : "egoing", "designer": "leezche" };
+      document.write("programer : "+coworkers.programer1+"<br>" );
+      document.write("designer : "+coworkers.designer+"<br>" );
+      coworkers.bookkepper = "duru";
+      document.write("bookkepper : "+coworkers.bookkepper+"<br>" );
+      coworkers["datascientist"] = "taeho";
+      document.write("datascientist : "+coworkers.datascientist+"<br>" );
+    </script>
+    <hr>
+    <script>
+        for(var key in coworkers){
+            document.write(key+" : "+coworkers[key]+"<br>");
+        }
+    </script>
+    <hr>
+        <!-- 매소드 만들기!! -->
+    <script>
+        coworkers.showAll = function(){
+            for(var key in this){
+                document.write(key+" : "+this[key]+"<br>");
+            }
+        }
+        coworkers.showAll()
+    </script>
+  </body>
+</html>
