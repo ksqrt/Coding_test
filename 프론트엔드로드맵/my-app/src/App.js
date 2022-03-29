@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 
+
 // 리엑트의 함수는 반드시 대문자 시작입니다.
 // 리엑트의 사용자 정의 테그 = "컴포넌트" 입니다.
 function Header(props) {
@@ -152,5 +153,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
