@@ -1,25 +1,15 @@
-# 9613 
-def solution(nums):
-    
-    arr = [False,False]+[True]*(1000+1)
-    primes = []
-    for i in range(2,1000+1):
-        if arr[i] == True:
-            primes.append(i)
-            for i in range(i*2,1000+1,i):
-                arr[i] = False
-    # print(primes)
-    stack = []
-    cnt = 0
-    for i in range(len(nums)):
-        for j in range(i+1,len(nums)):
-            for k in range(j+1,len(nums)):
-                stack.append(nums[i])
-                stack.append((nums[j]))
-                stack.append((nums[k]))
-                if sum(stack) in primes:
-                    cnt += 1
-                stack =[]
-    return cnt
+def gcd(a, b):
+    while b > 0:
+        a, b = b, a % b
+    return a
 
-solution([1,2,3,4])
+num1 = int(input())
+num3 = []
+for i in range(num1):
+    num2=(list(map(int, input().split())))
+    for k in range(1, len(num2)):
+       for j in range(i+1,len(num2)):
+            num3.append(gcd(num2[i],num2[k]))
+
+print(num2)
+print(num3)
