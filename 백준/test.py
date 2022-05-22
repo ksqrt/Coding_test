@@ -1,20 +1,21 @@
-# 1931 
+N, M = map(int, input().split())
+tree = list(map(int, input().split()))
+start, end = 1, max(tree) #이분탐색 검색 범위 설정
 
-n = int(input())
-arr = []
-for i in range(n):
-    arr.append(list(map(int,input().split())))    
-print(arr)
-# 끝나는 시간이 작은순서 대로 정렬 
-# 덱 정렬후 
-
-stack = []
-tmp = 0
-# arr 이 빈 배열이 될때까지 반복
-while arr:
-    stack.append(arr[tmp])
-    del arr[tmp]
-    arr = list(filter(lambda x: x[0] > stack[tmp][1],arr))
-    tmp += 1
-
-print(len(stack))
+while start <= end: #적절한 벌목 높이를 찾는 알고리즘
+    mid = (start+end) // 2
+    
+    log = 0 #벌목된 나무 총합
+    for i in tree:
+        # mid 보다 작은건 더하지 않고 큰것만 더함
+        if i >= mid:
+            # 나무길이 - 값
+            log += i - mid
+    
+    #벌목 높이를 이분탐색
+    # m 보다 나무가 길면 
+    if log >= M:
+        start = mid + 1
+    else:
+        end = mid - 1
+print(end)
