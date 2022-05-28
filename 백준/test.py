@@ -1,11 +1,16 @@
-n = int(input())
-k = int(input())
+import heapq as hq
 
-arr = [[1]*n]*n
+n = int(input())
+heap = []
+
 
 for i in range(n):
-    for j in range(n):
-        arr[i][j] = (i+1)*(j+1)
-
-print(arr)
-
+    k = int(input())
+    if k == 0 :
+        if len(heap) == 0:
+            print(0)
+        else:
+            print(hq.heappop(heap)[1])
+    else :
+        hq.heappush(heap,(abs(k),k))
+        
