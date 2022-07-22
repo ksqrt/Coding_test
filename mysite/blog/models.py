@@ -2,6 +2,8 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
+# model 특 db구조 만듬 이후 마이그래이션 해줘야함
+
 
 class Post(models.Model):
     author = models.ForeignKey(
@@ -19,3 +21,18 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class FileUpload(models.Model):
+    title = models.TextField(max_length=40, null=True)
+    imgfile = models.ImageField(null=True, upload_to="", blank=True)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.title
+
+
+class Document(models.Model):
+    title = models.CharField(max_length=200)
+    uploadedFile = models.FileField(upload_to="result/")
+    dateTimeOfUpload = models.DateTimeField(auto_now=True)
