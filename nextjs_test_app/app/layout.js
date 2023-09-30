@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
           <div className='navbar'>
             <Link href="/">홈</Link>
             <Link href="/list">List</Link>
+            <Link href="/cart">Cart</Link>
           </div>
           {/* 칠드런이 page.js 의 내용임 */}
           {children}
