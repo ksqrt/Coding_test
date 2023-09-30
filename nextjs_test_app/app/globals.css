@@ -1,0 +1,37 @@
+body {
+    margin:0;
+    /* 배경색 */
+    background-color: #303030;
+    /* 글자색 */
+    color: white;
+}
+
+.title {
+    text-align: center;
+    margin-top: 150px ;
+}
+
+.title-sub {
+    text-align: center;
+}
+
+.food {
+    margin: 20px auto;
+    width : 200px;
+
+    background-color: white;
+    color:#303030;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar{
+    background-color: white;
+    padding: 20px;
+    
+}
+
+.navbar a {
+    margin-right: 10px;
+    text-decoration: none;
+}
