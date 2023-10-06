@@ -15,7 +15,6 @@ export default async function Home() {
            {data.map((product, index) => (
                 // map 반복문 사용시 키 값에 유니크 값 넣어주면 좋아요
                 <div className="food" key={index}>
-                <h4>아이디 : {product._id}</h4>
                 <h4>제목 : {product.title}</h4>
                 <h4>내용 : {product.content}</h4>
                 </div>
