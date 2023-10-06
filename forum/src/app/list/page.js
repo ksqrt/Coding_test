@@ -16,7 +16,7 @@ export default async function List() {
                 <div className="list-bg" key={index}>
                     <div className="list-item">
                         <h4> <a href={`/detail/${product._id}`}>{product.title}</a></h4>
-                        <p> {product.content}</p>
+                        {/* <p> {product.content}</p> */}
                     </div>
                 </div>
                 ))
