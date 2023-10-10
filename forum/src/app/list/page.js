@@ -5,7 +5,7 @@ export default async function List() {
     const client = await connectDB;
     const db = client.db("forum")
     let data = await db.collection('post').find().toArray() 
-    console.log(data)
+    // console.log(data)
 
 
     return (

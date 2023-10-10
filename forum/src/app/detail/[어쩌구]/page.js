@@ -8,7 +8,7 @@ async function page(props) {
   const db = client.db("forum")
   let data = await db.collection('post').findOne({ _id : new ObjectId(props.params.어쩌구)})
   // console.log(data)
-  console.log(props)
+  // console.log(props)
 
   return (
     <div>
