@@ -11,7 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <a href='/'>홈페이지로 돌아가기</a>
+      <hr></hr>
+
+
+      {children}
+      </body>
     </html>
   )
 }
