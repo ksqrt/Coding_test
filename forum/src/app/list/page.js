@@ -1,3 +1,4 @@
+import Link from "next/link.js";
 import { connectDB } from "../../util/database.js"
 
 
@@ -17,6 +18,7 @@ export default async function List() {
                     <div className="list-item">
                         <h4> <a href={`/detail/${product._id}`}>{product.title}</a></h4>
                         {/* <p> {product.content}</p> */}
+                        <Link href={`/edit/${product._id}`}>✏️</Link>
                     </div>
                 </div>
                 ))

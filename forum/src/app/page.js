@@ -6,7 +6,7 @@ export default async function Home() {
 
   return (
        <div>
-          <a href='/createUser'>로그인</a>
+          <a href='/createUser'>회원가입</a>
           <br></br>
           <a href='/list'>글 목록</a>
           <br></br>
