@@ -12,6 +12,8 @@ export default async function Home() {
           <br></br>
           <a href='/write'>글 작성</a>
           <br></br>
+          <a href='/test'>test</a>
+          <br></br>
        </div>
   )
 }
