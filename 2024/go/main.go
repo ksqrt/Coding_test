@@ -1,76 +1,23 @@
 package main
 
 import (
+	"2024/models"
 	"fmt"
 )
 
-type user struct {
-	Id    int    `form:"id"`
-	Name  string `form:"name"`
-	Email string `form:"email"`
+func test() {
+	fmt.Println("test")
 }
-type point struct {
-	x, y int
-}
-type Obj struct {
-	Name string
-	Age  int
-}
-
-func PrintObject(list []Obj) {
-	for index, object := range list {
-		fmt.Printf("index: %d, object: %+v\n", index, object)
-	}
-}
-
 func main() {
 
-	list := []Obj{
-		{"Beckham", 11},
-		{"Zidane", 7},
-		{"Ronaldo", 9},
-	}
+	// 구조체 호출
+	var a models.Info
 
-	for _, object := range list {
-		object.Age = object.Age * 2
-	}
+	fmt.Println(a)
 
-	//test
-	// 출력, 11, 7, 9
-	PrintObject(list)
+	go test()
 
-	for index := range list {
-		object := &list[index]
-		object.Age = object.Age * 2
-	}
-
-	// 출력, 22, 14, 18
-	PrintObject(list)
-
-	for i := range list {
-		list[i].Age *= 2 // Age 값을 0으로 설정
-	}
-
-	PrintObject(list)
-
-	//------------------------------ 출력문 ------------------------------//
-	// 배열에서 반복문 쓰기
-	strArray := []string{"A", "B", "C"}
-
-	for index, str := range strArray {
-		fmt.Println(index, str)
-	}
-
-	//dict
-
-	dict := map[string]string{
-		"apple":  "red",
-		"banana": "yellow",
-	}
-
-	for key, value := range dict {
-		fmt.Printf("key :" + key + "value :" + value + "\n")
-	}
+	fmt.Scanln()
 
 	//------------------------------ go lang server ------------------------------//
 
