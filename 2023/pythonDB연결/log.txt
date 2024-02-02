@@ -1,0 +1,117 @@
+2월-01 16:38:37	SQL / User	UPDATE public.ma_usage
+	SET "usage"=49703
+	WHERE "no"=33820	12	1	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 16:38:37	SQL / User	UPDATE public.ma_usage
+	SET "usage"=1645
+	WHERE "no"=33385	12	1	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 16:37:56	SQL / User	select * from ma_usage where player_no = 5601	104	4	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 16:37:46	SQL / User	select * from ma_usage where player_no = 5601	8		ERROR: relation "ma_usage" does not exist
+  Position: 15	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 15:39:53	SQL / User	SELECT x.* FROM public.ma_total_data_1d x	191	137	Success	vpe 운영	Main <vpe_player>
+2월-01 14:52:36	SQL / User	select * from ma_row_datas where id between 2217593 and 2286588 and log_date < '2024-01-31 00:00:00.000'	407	4	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:40:06	SQL / User	select * from ma_row_datas where id between 2269800 and 2311500	1,817	10000	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:40:01	SQL / User	select * from ma_row_datas where id between 2269851 and 2311435 and log_date < '2024-02-01 00:00:00.000'	343	6	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:34:38	SQL / User	select * from ma_row_datas where id between 2269851 and 2311435 and log_date < '2024-02-01 00:00:00.000'	308	6	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:34:34	SQL / User	select * from ma_row_datas where id between 2286500 and 2286600	143	96	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:34:23	SQL / User	select * from ma_row_datas where id between 2217593 and 2286588 and log_date < '2024-01-31 00:00:00.000'	409	4	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:32:16	SQL / User	select * from ma_row_datas where id between 2286500 and 2286600	142	96	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:31:56	SQL / User	select * from ma_row_datas where id between 2269851 and 2311435 and log_date < '2024-02-01 00:00:00.000'	312	6	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:31:40	SQL / User	select * from ma_row_datas where id between 2269800 and 2311500	3,457	20000	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:31:11	SQL / User	select * from ma_row_datas where id between 2269800 and 2311500	1,873	10000	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:29:46	SQL / User	select * from ma_row_datas where id between 2251200 and 2251400	167	190	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:26:22	SQL / User	select * from ma_row_datas where id between 2217593 and 2286588 and log_date < '2024-01-31 00:00:00.000'	428	4	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:26:17	SQL / User	select min(id),max(id) from ma_row_datas where player_no = 5601 and log_date between '2024-01-31 00:00:00.000' and '2024-01-31 23:59:59.999'	2,986	1	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:26:02	SQL / User	select * from ma_row_datas where id between 2217593 and 2217593 and log_date < '2024-01-31 00:00:00.000'	73		Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:25:49	SQL / User	select min(id),max(id) from ma_row_datas where player_no = 5601 and log_date between '2024-01-31 00:00:00.000' and '2024-01-31 23:59:59.999'	2,914	1	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:25:05	SQL / User	select * from ma_row_datas where id between 2269851 and 2311435 and log_date < '2024-02-01 00:00:00.000'	390	6	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:25:03	SQL / User	select max(id),min(id) from ma_row_datas where player_no = 5601 and log_date between '2024-02-01 00:00:00.000' and '2024-02-01 23:59:59.999'	3,105	1	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:24:50	SQL / User	select * from ma_row_datas where id between 2269851 and 2311435 and log_date >'2024-02-01 00:00:00.000'	1,901	10000	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:24:00	SQL / User	select max(id),min(id) from ma_row_datas where player_no = 5601 and log_date between '2024-02-01 00:00:00.000' and '2024-02-01 23:59:59.999'	2,655	1	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:10:59	SQL / User	select * from ma_row_datas where player_no = 5601 order by id desc	20,467	40000	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:09:35	SQL / User	select * from ma_row_datas where player_no = 5601 order by id desc	18,704	30000	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:08:43	SQL / User	select * from ma_row_datas where player_no = 5601 order by id desc	17,382	20000	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:07:59	SQL / User	select * from ma_row_datas where player_no = 5601 order by id desc	16,235	10000	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:07:25	SQL / User	select * from ma_row_datas where player_no = 5601 order by no desc	12		ERROR: column "no" does not exist
+  Position: 60	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 14:03:25	SQL / User	select * from ma_usage where mbr_no = 2701556	68	4	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:51:13	SQL / User	select * from ma_row_datas where player_no = 5601 order by no desc	6,394	40000	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:50:37	SQL / User	select * from ma_row_datas where player_no = 5601 order by no desc	4,779	30000	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:50:20	SQL / User	select * from ma_row_datas where player_no = 5601 order by no desc	3,260	20000	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:50:15	SQL / User	select * from ma_row_datas where player_no = 5601 order by no desc	1,966	10000	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:49:43	SQL / User	select * from ma_row_datas where player_no = 5601 order by no desc limit 10000	1,783	10000	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:49:29	SQL / User	select * from ma_row_datas where player_no = 5601 order by no desc limit 10000	404	400	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:49:15	SQL / User	select * from ma_row_datas where player_no = 5601 order by no desc limit 10000	755	200	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:49:08	SQL / User	select * from ma_row_datas where player_no = 5601 and log_date order by no desc limit 10000	10		ERROR: argument of AND must be type boolean, not type timestamp with time zone
+  Position: 55	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:37:12	SQL / User	select * from ma_usage where mbr_no = 2701556	75	4	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:35:57	SQL / User	select * from ma_usage	91	191	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:35:48	SQL / User	select * from ma_usage where mbr_no = 2701556	71	4	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:34:56	SQL / User	SELECT x.* FROM public.ma_row_datas x	186	800	Success	vpe 운영	Main <vpe_player>
+2월-01 13:34:56	SQL / User	SELECT x.* FROM public.ma_row_datas x	181	600	Success	vpe 운영	Main <vpe_player>
+2월-01 13:34:54	SQL / User	SELECT x.* FROM public.ma_row_datas x	113	400	Success	vpe 운영	Main <vpe_player>
+2월-01 13:33:04	SQL / User	SELECT x.* FROM public.ma_row_datas x	423	200	Success	vpe 운영	Main <vpe_player>
+2월-01 13:30:33	SQL / User	select COUNT(*) from ma_row_datas where player_no = 5601 and log_date between '2024-01-31 00:00:00.000' and '2024-01-31 23:59:59.999'	2,913	1	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 13:29:25	SQL / User	select count(*) from ma_row_datas where player_no = 5601 and log_date between '2024-01-31 00:00:00.000' and '2024-01-31 23:59:59.999'	88	1	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:29:15	SQL / User	select COUNT(*) from ma_row_datas where player_no = 5601 and log_date between '2024-01-31 00:00:00.000' and '2024-01-31 23:59:59.999' and collection != 'R'	2,953	1	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 13:23:41	SQL / User	select * from ma_row_datas where player_no = 5601 and log_date between '2024-01-31 00:00:00.000' and '2024-01-31 23:59:59.999' and collection = 'R'	2,497	1065	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 13:23:33	SQL / User	select * from ma_row_datas where player_no = 5601 and log_date between '2024-01-31 00:00:00.000' and '2024-01-31 23:59:59.999' and collection = 'R'	2,793	1000	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 13:22:22	SQL / User	select * from ma_usage where mbr_no = 2701556	68	4	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:20:20	SQL / User	select count(*) from ma_row_datas where player_no = 5601 and log_date between '2024-01-31 00:00:00.000' and '2024-01-31 23:59:59.999'	91	1	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:19:36	SQL / User	select count(*) from ma_row_datas where player_no = 5601 and log_date between '2024-01-31 00:00:00.000' and '2024-01-31 23:59:59.999'	5,114	1	Success	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 13:18:35	SQL / User	select count(*) from ma_row_datas where player_no = 5601 and log_date_1d = '2024-01-31'	11		ERROR: column "log_date_1d" does not exist
+  Hint: Perhaps you meant to reference the column "ma_row_datas.log_date".
+  Position: 62	vpe 운영 로그	SQLEditor <Script-12.sql>
+2월-01 13:14:39	SQL / User filtered	SELECT x.* FROM public.player_log_tbl x
+ORDER BY x.id DESC	489	1000	Success	vpe 운영 로그	Main <vpe_player_log>
+2월-01 13:13:49	SQL / User filtered	SELECT x.* FROM public.ma_row_datas x
+ORDER BY x.id DESC	349	1000	Success	vpe 운영 로그	Main <vpe_player_log>
+2월-01 13:13:44	SQL / User	SELECT x.* FROM public.ma_row_datas x	244	1200	Success	vpe 운영 로그	Main <vpe_player_log>
+2월-01 13:13:29	SQL / User	SELECT x.* FROM public.player_log_tbl x	390	1400	Success	vpe 운영 로그	Main <vpe_player_log>
+2월-01 13:12:13	SQL / User	SELECT x.* FROM public.player_log_tbl x	145	400	Success	vpe 운영 로그	Main <vpe_player_log>
+2월-01 13:11:59	SQL / User	SELECT x.* FROM public.player_log_tbl x	349	200	Success	vpe 운영 로그	Main <vpe_player_log>
+2월-01 13:11:44	SQL / User	SELECT x.* FROM public.ma_row_datas x	171	200	Success	vpe 운영 로그	Main <vpe_player_log>
+2월-01 13:10:29	SQL / User	SELECT x.* FROM public.ma_row_datas x	19		ERROR: permission denied for view ma_row_datas	vpe 운영 로그	Main <vpe_player_log>
+2월-01 13:08:08	SQL / User filtered	SELECT x.* FROM public.ma_sync_check x
+ORDER BY x.created_at DESC	207	1471	Success	vpe 운영	Main <vpe_player>
+2월-01 13:07:33	SQL / User filtered	SELECT x.* FROM public.ma_contents x
+ORDER BY x.updated_at DESC	74	400	Success	vpe 운영	Main <vpe_player>
+2월-01 13:07:09	SQL / User filtered	SELECT x.* FROM public.ma_contents x
+ORDER BY x.updated_at DESC	126	200	Success	vpe 운영	Main <vpe_player>
+2월-01 13:07:04	SQL / User	SELECT x.* FROM public.ma_contents x	196	200	Success	vpe 운영	Main <vpe_player>
+2월-01 13:06:44	SQL / User filtered	SELECT x.* FROM public.ma_sync_check x
+ORDER BY x.created_at DESC	92	1400	Success	vpe 운영	Main <vpe_player>
+2월-01 13:06:41	SQL / User filtered	SELECT x.* FROM public.ma_sync_check x
+ORDER BY x.created_at DESC	112	1200	Success	vpe 운영	Main <vpe_player>
+2월-01 13:06:38	SQL / User filtered	SELECT x.* FROM public.ma_sync_check x
+ORDER BY x.created_at DESC	71	1000	Success	vpe 운영	Main <vpe_player>
+2월-01 13:06:30	SQL / User filtered	SELECT x.* FROM public.ma_sync_check x
+ORDER BY x.created_at DESC	99	800	Success	vpe 운영	Main <vpe_player>
+2월-01 13:06:29	SQL / User filtered	SELECT x.* FROM public.ma_sync_check x
+ORDER BY x.created_at DESC	97	600	Success	vpe 운영	Main <vpe_player>
+2월-01 13:06:28	SQL / User filtered	SELECT x.* FROM public.ma_sync_check x
+ORDER BY x.created_at DESC	53	400	Success	vpe 운영	Main <vpe_player>
+2월-01 13:06:19	SQL / User filtered	SELECT x.* FROM public.ma_sync_check x
+ORDER BY x.created_at DESC	107	200	Success	vpe 운영	Main <vpe_player>
+2월-01 13:06:14	SQL / User	SELECT x.* FROM public.ma_sync_check x	175	200	Success	vpe 운영	Main <vpe_player>
+2월-01 13:03:47	SQL / User	select * from ma_usage where mbr_no = 2701556	162	4	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:03:43	SQL / User	select count(*) from ma_row_datas where mbr_no = 2701556 and log_date between '2024-01-31 00:00:00' and '2024-01-31 23:59:59.99' and player_name = 'signalclass2'	155	1	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 13:03:15	SQL / User	SELECT * FROM ma_data_1d where mbr_no = 2701556 and log_date_1d = '2024-01-31'	293	200	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:48:34	SQL / User	select * from ma_usage where mbr_no = 2701556	69	4	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:48:32	SQL / User	select count(*) from ma_row_datas where mbr_no = 2701556 and log_date between '2024-01-31 00:00:00' and '2024-01-31 23:59:59.999' and player_name = 'signalclass2'	124	1	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:48:18	SQL / User	select * from ma_usage where mbr_no = 2701556	68	4	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:48:00	SQL / User	select * from ma_row_datas where mbr_no = 2701556 and log_date between '2024-01-31 00:00:00' and '2024-01-31 23:59:59.999' order by log_date desc	97	400	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:47:58	SQL / User	select * from ma_row_datas where mbr_no = 2701556 and log_date between '2024-01-31 00:00:00' and '2024-01-31 23:59:59.999' order by log_date desc	179	200	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:47:55	SQL / User	select * from ma_row_datas where mbr_no = 2701556 and log_date between '2024-01-31 00:00:00' and '2023-01-31 23:59:59.999' order by log_date desc	77		Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:47:24	SQL / User	select * from ma_usage where mbr_no = 2701556	72	4	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:47:22	SQL / User	select count(*) from ma_row_datas where mbr_no = 2701556 and log_date between '2024-01-31 00:00:00' and '2024-01-31 23:59:59.999'	82	1	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:47:14	SQL / User	select count(*) from ma_row_datas where mbr_no = 2701556 and log_date between '2024-01-31 00:00:00' and '2023-01-31 23:59:59.999'	97	1	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:47:09	SQL / User	select count(*) from ma_row_datas where mbr_no = 2701556 and log_date between '2024-01-31 00:00:00' and '2023-01-31 23:59:59.999' order by log_date desc	12		ERROR: column "ma_row_datas.log_date" must appear in the GROUP BY clause or be used in an aggregate function
+  Position: 140	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:46:24	SQL / User	select * from ma_row_datas where mbr_no = 2701556 and log_date between '2024-01-31 00:00:00' and '2024-02-01 00:01' order by log_date desc	607	200	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:45:48	SQL / User	select * from ma_row_datas where mbr_no = 2701556 and log_date between '2024-01-31 00:00:00' and '2024-02-01 00:00:01' order by log_date desc	183	200	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:45:15	SQL / User	select * from ma_row_datas where mbr_no = 2701556 and log_date between '2024-01-31 00:00:00' and '2024-01-31 23:59:59.999' order by log_date desc	183	200	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:44:49	SQL / User	select * from ma_row_datas where mbr_no = 2701556 and log_date = '2024-01-31' order by log_date desc	72		Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:44:12	SQL / User	select * from ma_row_datas where mbr_no = 2701556 order by log_date desc	147	600	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:44:09	SQL / User	select * from ma_row_datas where mbr_no = 2701556 order by log_date desc	164	400	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:44:00	SQL / User	select * from ma_row_datas where mbr_no = 2701556 order by log_date desc	308	200	Success	vpe 운영	SQLEditor <Script-18.sql>
+2월-01 11:42:47	SQL / User	select * from ma_usage where mbr_no = 2701556	226	4	Success	vpe 운영	SQLEditor <Script-18.sql>

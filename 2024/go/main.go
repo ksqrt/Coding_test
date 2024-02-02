@@ -5,9 +5,11 @@ import (
 	"fmt"
 )
 
-func test() {
-	fmt.Println("test")
+func test(a *models.Info) {
+	a.Id = 2
+	fmt.Println(a)
 }
+
 func main() {
 
 	// 구조체 호출
@@ -15,9 +17,13 @@ func main() {
 
 	fmt.Println(a)
 
-	go test()
+	a.Id = 1
+	a.Name = "test"
+	a.Email = "222"
 
-	fmt.Scanln()
+	fmt.Println(a)
+
+	test(&a)
 
 	//------------------------------ go lang server ------------------------------//
 
@@ -25,7 +31,7 @@ func main() {
 	//
 	//// CASE 1. get 파라미터 받기
 	//r.GET("/user", func(c *gin.Context) {
-	//
+	//bfdsfefㄹㅇㄹㅇ
 	//	// test
 	//
 	//	// var 변수명 타입 으로 선언함
